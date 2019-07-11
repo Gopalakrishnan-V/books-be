@@ -9,19 +9,21 @@
     "operatorsAliases": false
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "R7tP5r6gxp",
+    "password": "zpXA8mjw3r",
+    "database": "R7tP5r6gxp",
+    "host": "remotemysql.com",
     "dialect": "mysql",
+    "port": "3306",
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "R7tP5r6gxp",
+    "password": "zpXA8mjw3r",
+    "database": "R7tP5r6gxp",
+    "host": "remotemysql.com",
     "dialect": "mysql",
+    "port": "3306",
     "operatorsAliases": false
   }
 }
