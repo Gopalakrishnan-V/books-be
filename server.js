@@ -16,6 +16,12 @@ models.sequelize
     console.log(e, "Something went wrong with database sync");
   });
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
+
 app.use("/api/v1", v1);
 
 const PORT = process.env.PORT || 9000;
