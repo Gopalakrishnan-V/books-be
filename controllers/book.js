@@ -1,10 +1,13 @@
 const Book = require("../models").Book;
+const Author = require("../models").Author;
 const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
 
 const fetchAll = async (req, res) => {
   try {
-    const books = await Book.findAll();
+    const books = await Book.findAll({
+      include: [{ model: Author, as: "author" }]
+    });
     return res.send(books);
   } catch (e) {
     return res.status(500).send(e);
